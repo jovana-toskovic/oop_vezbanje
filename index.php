@@ -1,16 +1,15 @@
 <?php 
 
+use Authentication\Classes\User;
+use Authentication\Classes\Admin;
+use Authentication\Classes\Item;
+use Authentication\Classes\Auth\Login;
+
 use Messages\Assortment;
 use Messages\Product;
 use Messages\Shop;
 
-use Intefaces\Login;
-
-require_once __DIR__ . '/messages/Assortment.php';
-require_once __DIR__ . '/messages/Product.php';
-require_once __DIR__ . '/messages/Shop.php';
-
-require_once __DIR__ . '/interfaces/Login.php';
+include 'autoload.php';
 
 $product1  = new Product('orange');
 $assortment = new Assortment();
@@ -24,9 +23,21 @@ foreach($shopAssortment as $product) {
   echo $product->getName();
 }
 
-$login = new Login(array(
-  'userName' => 'jovana',
+
+$login = new Login();
+
+$user = new User(array(
+  'userName' => 'user',
   'email' => 'example@ex.com'
 ));
 
-$login->authenticate();
+$admin = new Admin(array(
+  'adminName' => 'admin',
+  'email' => 'example@ex.com'
+));
+
+$login->checkUser($user);
+$login->checkUser($admin);
+
+$item = new Item('keyboard');
+$item->checkAvailability();

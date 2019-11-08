@@ -1,6 +1,6 @@
 <?php
 
-namespace Interfaces;
+namespace Authentication\Interfaces;
 //polymorphism
 
 //only public methods
