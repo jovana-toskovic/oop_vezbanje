@@ -1,8 +1,8 @@
 <?php
 
-namespace Authentication\Classes;
+namespace Main\Authentication\Classes;
 
-use Authentication\Interfaces\Availability;
+use Main\Authentication\Interfaces\Availability;
 
 //require_once __DIR__ . '/../interfaces/Availability.php';
 

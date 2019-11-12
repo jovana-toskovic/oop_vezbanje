@@ -1,6 +1,6 @@
 <?php
 
-namespace AbstractClasses\AbstractClass;
+namespace Main\AbstractClasses\AbstractClass;
 
 abstract class Painting
 {

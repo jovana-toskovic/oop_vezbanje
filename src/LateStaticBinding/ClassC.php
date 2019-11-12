@@ -1,8 +1,8 @@
 <?php
 
-namespace LateStaticBinding;
+namespace Main\LateStaticBinding;
 
-use LateStaticBinding\ClassB;
+use Main\LateStaticBinding\ClassB;
 
 class ClassC extends ClassB
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Messages;
+namespace Main\Messages;
 
 class Product
 {

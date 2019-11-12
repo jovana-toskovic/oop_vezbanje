@@ -1,6 +1,6 @@
 <?php
 
-namespace LateStaticBinding;
+namespace Main\LateStaticBinding;
 
 class ClassA
 {

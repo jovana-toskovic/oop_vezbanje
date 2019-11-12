@@ -2,15 +2,18 @@
 
 declare(strict_types=1);
 
-use Authentication\Classes\{User, Admin, Item, Auth\Login};
+namespace Main;
 
-use Messages\{Assortment, Product, Shop};
+require_once __DIR__ . '/vendor/autoload.php';
 
-use AbstractClasses\{AbstractClass\Painting, ExtendAbstract\ModernPainting};
+use Main\Authentication\Classes\{User, Admin, Item, Auth\Login};
 
-use LateStaticBinding\{ClassA, ClassB, ClassC};
+use Main\Messages\{Assortment, Product, Shop};
 
-include 'autoload.php';
+use Main\AbstractClasses\{AbstractClass\Painting, ExtendAbstract\ModernPainting};
+
+use Main\LateStaticBinding\{ClassA, ClassB, ClassC};
+
 
 //practicing messages
 $product1  = new Product('orange');

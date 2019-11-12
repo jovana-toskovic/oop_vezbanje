@@ -1,8 +1,8 @@
 <?php
 
-namespace Authentication\Classes;
+namespace Main\Authentication\Classes;
 
-use Authentication\Interfaces\Authentication;
+use Main\Authentication\Interfaces\Authentication;
 
 //require_once __DIR__ . '/../interfaces/Authentication.php';
 

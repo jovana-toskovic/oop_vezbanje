@@ -1,6 +1,6 @@
 <?php
 
-namespace Authentication\Interfaces;
+namespace Main\Authentication\Interfaces;
 
 interface Availability
 {

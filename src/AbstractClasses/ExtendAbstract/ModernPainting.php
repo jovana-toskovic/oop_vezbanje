@@ -1,8 +1,8 @@
 <?php
 
-namespace AbstractClasses\ExtendAbstract;
+namespace Main\AbstractClasses\ExtendAbstract;
 
-use AbstractClasses\AbstractClass\Painting;
+use Main\AbstractClasses\AbstractClass\Painting;
 
 class ModernPainting extends Painting
 {
