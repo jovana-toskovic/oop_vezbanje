@@ -1,19 +1,16 @@
-<?php 
+<?php
+
+declare(strict_types=1);
+
+use Authentication\Classes\{User, Admin, Item, Auth\Login};
+
+use Messages\{Assortment, Product, Shop};
+
+use AbstractClasses\{AbstractClass\Painting, ExtendAbstract\ModernPainting};
+
+use LateStaticBinding\{ClassA, ClassB, ClassC};
 
 include 'autoload.php';
-
-use Authentication\Classes\User;
-use Authentication\Classes\Admin;
-use Authentication\Classes\Item;
-use Authentication\Classes\Auth\Login;
-
-use Messages\Assortment;
-use Messages\Product;
-use Messages\Shop;
-
-use AbstractClasses\AbstractClass\Painting;
-use AbstractClasses\ExtendAbstract\ModernPainting;
-
 
 //practicing messages
 $product1  = new Product('orange');
@@ -62,8 +59,8 @@ $newObject = new class('This is argument from anonymous class') {
   }
 };
 
-//we can extend anonymoyus classes, or //////implement interfaces
-// we cam use it to override methods
+//we can extend anonymoyus classes, or implement interfaces
+// we can use it to override methods
 $login->checkUser(new class(array(
   'adminName' => 'admin',
   'email' => 'example@ex.com'
@@ -78,3 +75,5 @@ $login->checkUser(new class(array(
   }
 });
 
+//Late static binding
+ClassC::test();

@@ -18,7 +18,7 @@ class User implements Authentication
   public function authenticate()
   {
 
-    foreach($this->user as $userData => $value){
+    foreach ($this->user as $userData => $value) {
       echo "<p>$userData: $value</p>";
     }
 
